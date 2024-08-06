@@ -1,0 +1,153 @@
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: hsl(204, 43%, 93%);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 350px;
+    box-sizing: border-box;
+}
+
+.join-community {
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.join-community h2 {
+    color: hsl(179, 62%, 43%);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.join-community p {
+    color: hsl(218, 22%, 67%);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.join-community .highlight {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+
+.bottom-container p {
+    color: hsl(204, 43%, 93%);
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscription, .why-us {
+    padding: 20px;
+    
+}
+
+.subscription {
+    background-color: hsl(179, 62%, 43%);
+
+}
+
+.subscription h3 {
+    color: hsl(204, 43%, 93%);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.price h1 {
+    color: hsl(204, 43%, 93%);
+    font-size: 40px;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.price p {
+    color:  hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.sign-up {
+    width: 100%;
+    background-color: hsl(71, 73%, 54%);
+    color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sign-up:hover {
+    background-color: hsl(71, 73%, 44%);
+}
+
+.why-us {
+    background-color: hsl(179, 56%, 48%);
+    border-radius: 0 0 10px 10px;
+}
+
+.why-us h3 {
+    color: hsl(204, 43%, 93%);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.why-us p {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.why-us span {
+    display: block;
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 800px;
+    }
+
+    .bottom-container {
+        flex-direction: row;
+    }
+
+    .subscription, .why-us {
+        flex: 1;
+        margin-bottom: 0;
+    }
+    .why-us{
+        border-radius: 0 0 10px 0;
+    }
+    .subscription{
+        border-radius: 0 0 0 10px ;
+    }
+}
